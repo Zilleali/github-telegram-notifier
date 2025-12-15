@@ -1,0 +1,7 @@
+from telegram import Bot
+from app.config import BOT_TOKEN, CHAT_ID
+
+bot = Bot(token=BOT_TOKEN)
+
+def send_message(text: str):
+    bot.send_message(chat_id=CHAT_ID, text=text)
